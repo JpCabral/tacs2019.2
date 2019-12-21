@@ -4,11 +4,11 @@
 
 Este guia usará como base a linguagem Java que por ser muito utilizada no ambiente acadêmico acaba por sofrer de diversos vícios ao se codificar, dificultando bastante a compreensão do produto final. Diante disso, é recomendado desenvolver códigos de maneira limpa, de modo a possibilitar maior manutenibilidade do software, afinal, programa-se também para outras pessoas e não apenas para computadores. Este breve guia fornece ao desenvolvedor dicas de como escrever códigos de maneira mais limpa tendo como base o livro "Código Limpo", de Robert C. Martin. 
 
-## Nomes significativos
+## Nomes autoexplicativos
 
 A seguir, serão dadas algumas dicas quanto à nomeação de variáveis, classes e métodos.
 
-### Utilize nomes que revelem seu propósito
+### Nomes que revelem seu objetivo
 
 O nome de uma variável, função ou classe necessita de responder todas às principais questões de um código, devendo dizer por que existe, o que faz e como é utilizado. Caso este necessite de um comentário para ser explicado, então não é adequado.
 
@@ -20,7 +20,7 @@ No exemplo anterior, o nome "i" não revela muita coisa. Por isso, deve ser esco
 ``` Java
 int contador;
 ```
-### Faça distinções significativas
+### Distinções significativas
 
 Em algumas ocasiões, pode ser necessário referir-se a duas variáveis diferentes no mesmo escopo. Como estas não podem possuir o mesmo nome, geralmente opta-se por adicionar números ou letras sequenciais em nomes. Ainda que isso não gere confusão, não oferece informações ou dicas sobre a intenção do programador.
 
@@ -34,7 +34,7 @@ public static void copiarNumeros(int n1[], int n2[]) {
 
 Tal método pode ser lido mais facilmente caso o nome de seus parâmetros sejam "vetorOrigem" e "vetorDestino", por exemplo.
 
-### Use nomes pronunciáveis
+### Nomes pronunciáveis
 ```Java
 class CerimEm2019 {
        private Date datInYmdhsm;
@@ -52,7 +52,7 @@ class EmmyAwards {
 }
 ```
 
-### Classes e métodos
+### Nomes de Classes e métodos
 
 Classes e objetos devem ser denominadas com substantivos, propriamente ditos, por exemplo, Estudante, SalaDeAula, AcademyAwards. Palavras genéricas como Gerente, Processador, Dados devem ser evitadas, além de não poderem ser utilizados verbos para nomeá-las.
 
@@ -80,9 +80,9 @@ public static int obtemMaiorNumero(int valorInicial, int valorFinal) {
 }
 ```
 
-### Objetivo
+### Coesão
 
-As funções devem possuir um único objetivo, ou seja, elas devem realizar apenas uma tarefa. O exemplo a seguir mostra uma função que realiza diversas tarefas.
+As funções devem se limitar a fazer o mínimo de ações possíveis, ou seja, elas devem realizar se possível apenas uma tarefa. O exemplo a seguir mostra uma função que realiza diversas tarefas.
 
 ```Java
 public static int verificaNumero(int valorInicial, int valorFinal, int[] vetor) {
