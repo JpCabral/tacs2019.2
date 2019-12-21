@@ -1,8 +1,8 @@
-# Guia do desenvolvedor
+# Guia do desenvolvedor 1.0
 
 ## Introdução
 
-
+Este guia usará como base a linguagem Java que por ser muito utilizada no ambiente acadêmico acaba por sofrer de diversos vícios ao se codificar, dificultando bastante a compreensão do produto final. Diante disso, é recomendado desenvolver códigos de maneira limpa, de modo a possibilitar maior manutenibilidade do software, afinal, programa-se também para outras pessoas e não apenas para computadores. Este breve guia fornece ao desenvolvedor dicas de como escrever códigos de maneira mais limpa tendo como base o livro "Código Limpo", de Robert C. Martin. 
 
 ## Nomes significativos
 
